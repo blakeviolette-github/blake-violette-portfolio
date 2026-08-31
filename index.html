@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blake Violette | Senior Supply Chain & IT Program Manager</title>
+    <title>Blake Violette | Global Reverse Logistics & Asset Lifecycle Leader</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -18,12 +18,13 @@
                         sans: ['Inter', 'sans-serif'],
                     },
                     colors: {
-                        brand: {
-                            50: '#f0f7ff',
-                            100: '#e0effe',
-                            600: '#0284c7',
-                            800: '#075985',
-                            900: '#0c4a6e',
+                        emerald: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            600: '#059669',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
                         }
                     }
                 }
@@ -31,41 +32,42 @@
         }
     </script>
 </head>
-<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-brand-600 selection:text-white">
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-emerald-600 selection:text-white">
 
     <!-- Navigation Header -->
     <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur border-b border-slate-800">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#hero" class="text-xl font-bold tracking-tight text-white">Blake Violette</a>
+            <a href="#hero" class="text-xl font-bold tracking-tight text-white hover:text-emerald-500 transition">Blake Violette</a>
             <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
-                <a href="#about" class="hover:text-brand-600 transition">About</a>
-                <a href="#expertise" class="hover:text-brand-600 transition">Expertise</a>
-                <a href="#experience" class="hover:text-brand-600 transition">Experience</a>
-                <a href="#education" class="hover:text-brand-600 transition">Education</a>
-                <a href="#tech" class="hover:text-brand-600 transition">Tech Stack</a>
+                <a href="#about" class="hover:text-emerald-500 transition">About</a>
+                <a href="#expertise" class="hover:text-emerald-500 transition">Expertise</a>
+                <a href="#experience" class="hover:text-emerald-500 transition">Experience</a>
+                <a href="#projects" class="hover:text-emerald-500 transition">Projects</a>
+                <a href="#education" class="hover:text-emerald-500 transition">Education</a>
+                <a href="#tech" class="hover:text-emerald-500 transition">Tech Stack</a>
             </nav>
-            <a href="https://github.com/blakeviolette-github/blake-violette-portfolio/issues/new" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-brand-600 hover:bg-brand-800 text-white rounded-lg text-sm font-semibold transition">
+            <a href="https://github.com/blakeviolette-github/blake-violette-portfolio/issues/new" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-emerald-700 hover:bg-emerald-800 text-white rounded-lg text-sm font-semibold transition">
                 Send Message
             </a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="py-24 border-b border-slate-800 bg-gradient-to-b from-slate-900 to-slate-950">
+    <section id="hero" class="py-24 border-b border-slate-800 bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950">
         <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-12 items-center">
             <div class="md:col-span-2">
                 <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-4 leading-tight">
                     Blake Violette
                 </h1>
-                <p class="text-xl font-semibold text-brand-600 mb-6">
-                    Senior IT & Operations Program Manager | Solutions Architect
+                <p class="text-xl font-semibold text-emerald-500 mb-6">
+                    Global Reverse Logistics & Asset Lifecycle Leader | Technical Program Manager
                 </p>
                 <p class="text-slate-400 text-base leading-relaxed mb-8">
-                    15 years of progressive experience leading complex software development, cloud infrastructure (AWS), systems integration, and technical programs. Specialist in enterprise SAP migrations, AWS cloud data architectures, SDLC frameworks, and multi-modal logistics networks across global enterprise platforms.
+                    15 years of experience driving large-scale asset lifecycle management, reverse logistics, supply chain transformations, and compliance governance across international operations at Amazon, Bell's Brewery, and General Electric. Specialist in cloud data architecture (AWS), Python, SQL, and Streamlit web application development.
                 </p>
                 <div class="flex flex-wrap gap-4">
-                    <a href="https://github.com/blakeviolette-github/blake-violette-portfolio/issues/new" target="_blank" rel="noopener noreferrer" class="px-6 py-3 bg-brand-600 hover:bg-brand-800 text-white font-semibold rounded-lg shadow-lg transition">
-                        Send Message on GitHub
+                    <a href="https://github.com/blakeviolette-github/blake-violette-portfolio/issues/new" target="_blank" rel="noopener noreferrer" class="px-6 py-3 bg-emerald-700 hover:bg-emerald-800 text-white font-semibold rounded-lg shadow-lg transition">
+                        Get in Touch (GitHub)
                     </a>
                     <a href="#experience" class="px-6 py-3 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold rounded-lg border border-slate-700 transition">
                         View Track Record
@@ -76,11 +78,11 @@
                 <h3 class="text-lg font-bold text-white mb-2 border-b border-slate-700 pb-2">Location & Status</h3>
                 <div>
                     <span class="text-xs uppercase text-slate-500 font-bold block">Location</span>
-                    <span class="text-slate-200 font-medium">Luxembourg</span>
+                    <span class="text-slate-200 font-medium">Weimerskirch, Luxembourg City, Luxembourg</span>
                 </div>
                 <div>
                     <span class="text-xs uppercase text-slate-500 font-bold block">Work Authorization</span>
-                    <span class="text-slate-200 font-medium">US Citizen / Permanent Luxembourg Resident</span>
+                    <span class="text-slate-200 font-medium">Permanent Luxembourg Resident / US Citizen</span>
                 </div>
                 <div>
                     <span class="text-xs uppercase text-slate-500 font-bold block">Clearance Eligibility</span>
@@ -88,7 +90,7 @@
                 </div>
                 <div>
                     <span class="text-xs uppercase text-slate-500 font-bold block">Languages</span>
-                    <span class="text-slate-200 font-medium">English (Native Fluency), French (Basic Operational Awareness)</span>
+                    <span class="text-slate-200 font-medium">English (Native), Luxembourgish (Sproochentest Study in Progress)</span>
                 </div>
             </div>
         </div>
@@ -98,12 +100,12 @@
     <section id="about" class="py-20 border-b border-slate-800 bg-slate-900">
         <div class="max-w-6xl mx-auto px-6">
             <h2 class="text-3xl font-bold text-white mb-6">Professional Profile</h2>
-            <div class="bg-slate-800/40 border border-slate-800 rounded-xl p-8 leading-relaxed text-slate-300">
-                <p class="mb-4">
-                    Highly analytical, strategic, and autonomous Senior Program Manager with 15 years of progressive experience leading complex, cross-functional software development, systems integration, and cloud infrastructure initiatives. Proven track record within global enterprise environments (Amazon, General Electric) managing end-to-end SDLC frameworks, cloud-native deployments on AWS, and driving alignment across diverse stakeholder groups in highly ambiguous environments.
+            <div class="bg-slate-800/40 border border-slate-800 rounded-xl p-8 leading-relaxed text-slate-300 space-y-4">
+                <p>
+                    Accomplished Global Logistics and Technical Program Leader with 15 years of experience driving large-scale asset lifecycle management, reverse logistics, supply chain transformations, and compliance governance across international operations at Amazon, Bell's Brewery, and General Electric. Expert in establishing centralized governance frameworks, vendor SLAs, transparent reporting dashboards, and circular economy workflows.
                 </p>
                 <p>
-                    Expert in Agile methodologies, PMO governance, and cloud-backed data engineering, with demonstrated ability to leverage AWS serverless and data tools to achieve operational excellence and process simplification. Fully fluent in English; locally based in Luxembourg.
+                    Proven track record of bridging cross-functional business partners (Procurement, Supply Chain, Legal, Finance) with technical engineering teams to minimize waste, eliminate cash leakage, and achieve zero-waste sustainability targets. Strong proficiency across Python, SQL, R, Streamlit, AWS Cloud Infrastructure, and ERP systems (SAP, MS Dynamics).
                 </p>
             </div>
         </div>
@@ -115,27 +117,27 @@
             <h2 class="text-3xl font-bold text-white mb-10">Core Areas of Expertise</h2>
             <div class="grid md:grid-cols-2 gap-8">
                 <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl shadow-sm">
-                    <h3 class="text-xl font-bold text-white mb-3 text-brand-600">IT Program & Portfolio Governance</h3>
+                    <h3 class="text-xl font-bold text-emerald-500 mb-3">Reverse Logistics & Asset Recovery</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">
-                        PMO Frameworks, Full-Lifecycle Software Delivery (SDLC), Cross-Functional Team Leadership, Agile/Scrum Methodologies, Scope Management, and Vendor/Contractor Alignment.
+                        End-to-End Asset Lifecycle, Value Recovery, Circular Economy Strategy, Recycling Governance, Material Flow Transparency, and Systemic Waste Reduction.
                     </p>
                 </div>
                 <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl shadow-sm">
-                    <h3 class="text-xl font-bold text-white mb-3 text-brand-600">AWS Cloud Infrastructure & Big Data</h3>
+                    <h3 class="text-xl font-bold text-emerald-500 mb-3">Governance, Compliance & Procurement</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">
-                        AWS Cloud Architectures (S3, Redshift, AWS Glue, Fargate, CloudWatch, QuickSight), Automated Data Pipeline Construction, ETL Workflows, and Cloud Monitoring/Telemetry.
+                        Supplier SLA/OLA Management, Tenderization & Contracting, Regulatory Compliance Audits, Multi-Market Governance, and Corporate Risk Mitigation ($20M+ safeguarded).
                     </p>
                 </div>
                 <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl shadow-sm">
-                    <h3 class="text-xl font-bold text-white mb-3 text-brand-600">Enterprise Systems Architecture</h3>
+                    <h3 class="text-xl font-bold text-emerald-500 mb-3">AWS Cloud & Analytics Engineering</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">
-                        SAP ERP Integration & Migrations, Warehouse Management Systems (WMS), Transportation Management Systems (TMS), Systems Blueprinting, and IT Infrastructure Upgrades.
+                        AWS Cloud Infrastructure (S3, Redshift, Glue, Fargate, QuickSight), Automated Data Pipelines, Big Data Processing (156PB Environment), SQL, Python, R, Tableau, and Power BI.
                     </p>
                 </div>
                 <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl shadow-sm">
-                    <h3 class="text-xl font-bold text-white mb-3 text-brand-600">Operational Excellence & Risk Auditing</h3>
+                    <h3 class="text-xl font-bold text-emerald-500 mb-3">Process Optimization & Quality Assurance</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">
-                        Six Sigma Process Optimization, Greenfield Facility Design (AutoCAD), Corporate Audit Staff Risk Mitigation ($20M+ exposure safeguarded), UAT Protocol Definition, and Compliance.
+                        GE Certified Lean Six Sigma Green Belt (DMAIC), Root Cause Analysis (5 Whys), BPMN Process Mapping, Greenfield Space Layouts (AutoCAD), and UAT Protocol Execution.
                     </p>
                 </div>
             </div>
@@ -150,18 +152,18 @@
             <div class="space-y-12">
 
                 <!-- Amazon -->
-                <div class="relative pl-8 border-l-2 border-brand-600">
-                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-brand-600"></div>
+                <div class="relative pl-8 border-l-2 border-emerald-600">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-emerald-600"></div>
                     <div class="flex flex-wrap justify-between items-baseline mb-2">
                         <h3 class="text-2xl font-bold text-white">Amazon</h3>
-                        <span class="text-sm font-semibold text-brand-600">Luxembourg | 2021 – Present</span>
+                        <span class="text-sm font-semibold text-emerald-500">Luxembourg City, Luxembourg | 2021 – Present</span>
                     </div>
-                    <p class="text-lg font-medium text-slate-300 mb-4">Senior IT & Operations Program Manager</p>
+                    <p class="text-lg font-medium text-slate-300 mb-4">Senior Technical Program Manager & Supply Chain Leader</p>
                     <ul class="space-y-3 text-slate-400 text-sm leading-relaxed list-disc list-inside">
-                        <li>Directed cross-functional software integration and logistics initiatives across European operations, overseeing delivery schedules, resource allocation, and PMO alignment.</li>
-                        <li>Architected cloud-native data workflows utilizing AWS (S3, Glue, Redshift, Fargate) to ingest and process high-volume linehaul routing streams and fleet telematics.</li>
-                        <li>Re-architected SQL data pipelines and Python ingestion scripts to improve arrival time predictions from p90 to p50, slashing buffer times across air/ground transport hubs.</li>
-                        <li>Designed automated executive BI dashboards in AWS QuickSight, Tableau, and Power BI monitored via CloudWatch metrics.</li>
+                        <li><strong>Uncovered $403M in operational efficiencies:</strong> Architected end-to-end multi-market supply chain data pipelines and automated performance monitoring frameworks across a 156PB annual data environment.</li>
+                        <li><strong>Empowered 3,000+ daily decision-makers with end-to-end visibility:</strong> Designed and implemented centralized reporting suites, material flow dashboards, and executive performance metrics to drive cross-border operational transparency.</li>
+                        <li><strong>Accelerated program execution velocity by 25% and reduced incident MTTR by 40%:</strong> Standardized multi-stakeholder governance backlogs and led cross-functional root cause investigations (5 Whys) to eliminate system bottlenecks and operational downtime.</li>
+                        <li><strong>Achieved 99.5% deployment success rate across global initiatives:</strong> Led cross-functional alignment across Procurement, Legal, Finance, and Operations teams to execute standardized governance frameworks and vendor partner sign-offs.</li>
                     </ul>
                 </div>
 
@@ -169,27 +171,15 @@
                 <div class="relative pl-8 border-l-2 border-slate-700">
                     <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-700"></div>
                     <div class="flex flex-wrap justify-between items-baseline mb-2">
-                        <h3 class="text-2xl font-bold text-white">Bell's Brewery</h3>
-                        <span class="text-sm font-semibold text-slate-400">USA | 2017 – 2021</span>
+                        <h3 class="text-2xl font-bold text-white">Bell's Brewery, Inc.</h3>
+                        <span class="text-sm font-semibold text-slate-400">Michigan, USA | 2017 – 2021</span>
                     </div>
-                    <p class="text-lg font-medium text-slate-300 mb-4">S&OP & Commercial Analytics Lead</p>
+                    <p class="text-lg font-medium text-slate-300 mb-4">Manager of S&OP, Systems & Reverse Workflow Architecture</p>
                     <ul class="space-y-3 text-slate-400 text-sm leading-relaxed list-disc list-inside">
-                        <li>Built centralized SQL transaction registries to capture distributor allocations, seasonal demand spikes, and raw material ingredient forecasts across multi-state footprints.</li>
-                        <li>Optimized commercial inventory tracking pipelines, removing systemic data anomalies and improving demand forecasting precision.</li>
-                    </ul>
-                </div>
-
-                <!-- SweetWater Brewing -->
-                <div class="relative pl-8 border-l-2 border-slate-700">
-                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-700"></div>
-                    <div class="flex flex-wrap justify-between items-baseline mb-2">
-                        <h3 class="text-2xl font-bold text-white">SweetWater Brewing</h3>
-                        <span class="text-sm font-semibold text-slate-400">USA | 2014 – 2015</span>
-                    </div>
-                    <p class="text-lg font-medium text-slate-300 mb-4">Facility Layout & Logistics Engineer</p>
-                    <ul class="space-y-3 text-slate-400 text-sm leading-relaxed list-disc list-inside">
-                        <li>Engineered the spatial blueprinting and physical material flow for a 3,200 m² distribution facility using AutoCAD.</li>
-                        <li>Executed predictive simulations to optimize inbound freight lanes, receiving dock door positioning, and cold-chain outbound distribution lines for 100+ weekly shipments.</li>
+                        <li><strong>Eliminated $250k in annual operational waste:</strong> Spearheaded cross-functional process redesigns to optimize material recovery, inventory return flows, and supplier network integration in alignment with circularity goals.</li>
+                        <li><strong>Reduced demand and inventory variance by 22%:</strong> Directed enterprise ERP software transitions (Microsoft Dynamics) and custom reporting tools, defining end-to-end material tracking journeys.</li>
+                        <li><strong>Elevated supplier and internal SLA compliance to 98%:</strong> Negotiated cross-departmental operational priorities and established binding Operational Level Agreements (OLAs) between commercial and logistics teams.</li>
+                        <li><strong>Boosted cross-departmental project execution velocity by 35%:</strong> Standardized work tracking, sprint planning, and vendor dependency mapping across regional hubs using Asana.</li>
                     </ul>
                 </div>
 
@@ -197,14 +187,14 @@
                 <div class="relative pl-8 border-l-2 border-slate-700">
                     <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-700"></div>
                     <div class="flex flex-wrap justify-between items-baseline mb-2">
-                        <h3 class="text-2xl font-bold text-white">General Electric (GE)</h3>
-                        <span class="text-sm font-semibold text-slate-400">USA | 2008 – 2014</span>
+                        <h3 class="text-2xl font-bold text-white">General Electric Company</h3>
+                        <span class="text-sm font-semibold text-slate-400">Various Locations, USA | 2011 – 2016</span>
                     </div>
-                    <p class="text-lg font-medium text-slate-300 mb-4">OMLP & Technical Process Engineer / Corporate Audit Staff</p>
+                    <p class="text-lg font-medium text-slate-300 mb-4">Corporate Audit Staff & Operations Associate</p>
                     <ul class="space-y-3 text-slate-400 text-sm leading-relaxed list-disc list-inside">
-                        <li>Headed User Acceptance Testing (UAT), floor pathing layouts, and process definitions for a major WMS migration across a 37,000 m² hub, lifting tracking precision by 20%.</li>
-                        <li>Diagnosed inventory rotation failures in a 3,000 m² component hub; designed an AutoCAD physical FIFO flow-racking modification pushing tracking accuracy from 85% to 99.9%.</li>
-                        <li>Selected for Corporate Audit Staff; conducted deep-dive technical and financial audits across multi-million dollar asset agreements, mitigating over $20M in systemic risk exposure.</li>
+                        <li><strong>Reduced operational errors and system downtime by 22%:</strong> Applied GE Lean Six Sigma Green Belt DMAIC methodology to audit international operational failures and restructure material recycling/waste workflows.</li>
+                        <li><strong>Delivered multi-site SAP ERP deployment on time and under budget:</strong> Converted complex regulatory, financial, and operational requirements into functional technical specifications for IT engineering groups.</li>
+                        <li><strong>Mitigated enterprise operational risk across global business units:</strong> Executed multi-market compliance audits evaluating supplier governance, environmental integrity, and financial control frameworks.</li>
                     </ul>
                 </div>
 
@@ -212,31 +202,66 @@
         </div>
     </section>
 
+    <!-- Featured Personal Projects Section -->
+    <section id="projects" class="py-20 border-b border-slate-800 bg-slate-950">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-10">Featured Software Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <div class="p-8 bg-slate-900 border border-slate-800 rounded-xl space-y-4">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs uppercase font-bold tracking-wider text-emerald-500">Live Web Application</span>
+                        <span class="text-xs text-slate-500">Streamlit • Python • GitHub</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">BloopyBloop Web App</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Custom interactive web application developed in Python and deployed via Streamlit and GitHub. Designed to dynamically generate personalized bedtime stories and interactive creative content.
+                    </p>
+                    <div class="pt-2">
+                        <a href="https://github.com/blakeviolette-github" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-emerald-500 hover:text-emerald-400 transition">View GitHub Repositories &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="p-8 bg-slate-900 border border-slate-800 rounded-xl space-y-4">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs uppercase font-bold tracking-wider text-emerald-500">Data Engineering Pipeline</span>
+                        <span class="text-xs text-slate-500">AWS • SQL • Python</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Automated Logistics Telematics Pipeline</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Architected automated ETL data pipelines using AWS Glue, Redshift, and S3 to process high-volume linehaul routing streams, enabling real-time executive dashboarding in QuickSight and Tableau.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- Education & Credentials -->
-    <section id="education" class="py-20 border-b border-slate-800 bg-slate-950">
+    <section id="education" class="py-20 border-b border-slate-800 bg-slate-900">
         <div class="max-w-6xl mx-auto px-6">
             <h2 class="text-3xl font-bold text-white mb-10">Education & Credentials</h2>
             <div class="grid md:grid-cols-2 gap-8">
                 
                 <!-- Graduate -->
                 <div class="p-8 bg-slate-900 border border-slate-800 rounded-xl">
-                    <div class="text-xs uppercase font-bold tracking-wider text-brand-600 mb-2">Graduate Education</div>
+                    <div class="text-xs uppercase font-bold tracking-wider text-emerald-500 mb-2">Graduate Education</div>
                     <h3 class="text-xl font-bold text-white">Master of Professional Studies (M.P.S.)</h3>
-                    <p class="text-slate-300 font-medium text-sm mb-4">Supply Chain Management & Systems Engineering</p>
-                    <p class="text-slate-400 text-sm mb-2"><strong>The Pennsylvania State University</strong> (Penn State), PA, USA</p>
+                    <p class="text-slate-300 font-medium text-sm mb-4">Supply Chain Management</p>
+                    <p class="text-slate-400 text-sm mb-2"><strong>The Pennsylvania State University</strong>, PA, USA (2013)</p>
                     <p class="text-slate-500 text-xs leading-relaxed">
-                        Curriculum Focus: Strategic Procurement (SCM 820), Electronic Business (SCM 465), Operations Planning & Control (SCM 445), Transportation & Distribution (SCM 810), and Supply Chain Strategy (SCM 850).
+                        Curriculum focused on operations management, reverse logistics architecture, quantitative systems analysis, strategic procurement, and distribution networks.
                     </p>
                 </div>
 
                 <!-- Undergraduate -->
                 <div class="p-8 bg-slate-900 border border-slate-800 rounded-xl">
-                    <div class="text-xs uppercase font-bold tracking-wider text-brand-600 mb-2">Undergraduate Education</div>
+                    <div class="text-xs uppercase font-bold tracking-wider text-emerald-500 mb-2">Undergraduate Education</div>
                     <h3 class="text-xl font-bold text-white">Bachelor of Science (B.S.)</h3>
                     <p class="text-slate-300 font-medium text-sm mb-4">Statistics and Logistics</p>
-                    <p class="text-slate-400 text-sm mb-2"><strong>University of Tennessee</strong>, Knoxville, TN, USA</p>
+                    <p class="text-slate-400 text-sm mb-2"><strong>University of Tennessee</strong>, Knoxville, TN, USA (2009)</p>
                     <p class="text-slate-500 text-xs leading-relaxed">
-                        Curriculum Focus: Statistical Data Analysis, Applied Probability, Operations Research, Quantitative Logistics Modeling.
+                        Curriculum focused on statistical data analysis, applied probability, operations research, and quantitative logistics modeling.
                     </p>
                 </div>
 
@@ -246,55 +271,55 @@
             <div class="mt-8 p-6 bg-slate-900 border border-slate-800 rounded-xl flex flex-wrap gap-6 items-center justify-between">
                 <div>
                     <h4 class="text-base font-bold text-white mb-1">Professional Certifications</h4>
-                    <p class="text-slate-400 text-sm">Certified Six-Sigma Green Belt (General Electric, 2011) • SAP ERP Certified Technical User • Agile/Scrum SDLC Frameworks</p>
+                    <p class="text-slate-400 text-sm">Certified GE Lean Six Sigma Green Belt • SAP ERP Technical User Certification • Agile & SDLC Frameworks</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Technical Systems & Toolbox -->
-    <section id="tech" class="py-20 border-b border-slate-800 bg-slate-900">
+    <section id="tech" class="py-20 border-b border-slate-800 bg-slate-950">
         <div class="max-w-6xl mx-auto px-6">
             <h2 class="text-3xl font-bold text-white mb-10">Technical Systems & Toolbox</h2>
             <div class="grid md:grid-cols-4 gap-6">
                 
-                <div class="p-6 bg-slate-800/40 border border-slate-800 rounded-xl">
-                    <h3 class="text-lg font-bold text-white mb-3">AWS Cloud Ecosystem</h3>
+                <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl">
+                    <h3 class="text-lg font-bold text-white mb-3">AWS Cloud & Infrastructure</h3>
                     <ul class="space-y-2 text-slate-300 text-sm">
-                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-600 rounded-full"></span>AWS S3 & Redshift</li>
-                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-600 rounded-full"></span>AWS Glue & ETL Pipelines</li>
-                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-600 rounded-full"></span>AWS Fargate & Serverless</li>
-                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-600 rounded-full"></span>AWS QuickSight & CloudWatch</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>AWS S3 & Redshift</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>AWS Glue ETL Pipelines</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>AWS Fargate & Serverless</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>AWS QuickSight & CloudWatch</li>
                     </ul>
                 </div>
 
-                <div class="p-6 bg-slate-800/40 border border-slate-800 rounded-xl">
-                    <h3 class="text-lg font-bold text-white mb-3">Data & Analytics</h3>
+                <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl">
+                    <h3 class="text-lg font-bold text-white mb-3">Data, Code & Web Tools</h3>
                     <ul class="space-y-2 text-slate-300 text-sm">
-                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-600 rounded-full"></span>Advanced SQL Querying</li>
-                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-600 rounded-full"></span>Python Data Automation</li>
-                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-600 rounded-full"></span>Tableau & Power BI</li>
-                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-600 rounded-full"></span>Advanced Excel (VBA/Macros)</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>Python & Streamlit</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>Advanced SQL & R</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>Tableau & Power BI</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>GitHub Version Control</li>
                     </ul>
                 </div>
 
-                <div class="p-6 bg-slate-800/40 border border-slate-800 rounded-xl">
-                    <h3 class="text-lg font-bold text-white mb-3">Enterprise Systems</h3>
+                <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl">
+                    <h3 class="text-lg font-bold text-white mb-3">Enterprise ERP & Agile</h3>
                     <ul class="space-y-2 text-slate-300 text-sm">
-                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-600 rounded-full"></span>SAP ERP (Logistics/MM)</li>
-                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-600 rounded-full"></span>WMS & TMS Deployments</li>
-                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-600 rounded-full"></span>Jira & Confluence</li>
-                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-600 rounded-full"></span>Agile/SDLC PMO Frameworks</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>SAP (ERP & Specs)</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>Microsoft Dynamics</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>Jira, Confluence & Asana</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>Azure DevOps & SDLC</li>
                     </ul>
                 </div>
 
-                <div class="p-6 bg-slate-800/40 border border-slate-800 rounded-xl">
-                    <h3 class="text-lg font-bold text-white mb-3">Engineering & Design</h3>
+                <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl">
+                    <h3 class="text-lg font-bold text-white mb-3">Logistics & Quality</h3>
                     <ul class="space-y-2 text-slate-300 text-sm">
-                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-600 rounded-full"></span>AutoCAD Space Layouts</li>
-                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-600 rounded-full"></span>Material Flow Optimization</li>
-                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-600 rounded-full"></span>FIFO Racking Engineering</li>
-                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-600 rounded-full"></span>Six Sigma Green Belt</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>Lean Six Sigma DMAIC</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>5 Whys Root Cause Analysis</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>AutoCAD Facility Blueprinting</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>Circular Economy & Recycling</li>
                     </ul>
                 </div>
 
@@ -307,10 +332,10 @@
         <div class="max-w-6xl mx-auto px-6 text-center">
             <h2 class="text-2xl font-bold text-white mb-4">Let's Connect</h2>
             <p class="max-w-xl mx-auto text-sm text-slate-400 mb-8">
-                Currently open to executive analytics, systems architecture, and IT program management leadership opportunities across Luxembourg and Europe.
+                Based in Weimerskirch, Luxembourg City. Open to senior leadership opportunities across supply chain analytics, program management, and systems architecture.
             </p>
             <div class="flex justify-center gap-4 mb-12">
-                <a href="https://github.com/blakeviolette-github/blake-violette-portfolio/issues/new" target="_blank" rel="noopener noreferrer" class="px-6 py-3 bg-brand-600 hover:bg-brand-800 text-white font-semibold rounded-lg transition">
+                <a href="https://github.com/blakeviolette-github/blake-violette-portfolio/issues/new" target="_blank" rel="noopener noreferrer" class="px-6 py-3 bg-emerald-700 hover:bg-emerald-800 text-white font-semibold rounded-lg transition">
                     Send Message on GitHub
                 </a>
                 <a href="https://www.linkedin.com/in/blakeviolette" target="_blank" rel="noopener noreferrer" class="px-6 py-3 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold rounded-lg border border-slate-700 transition">
