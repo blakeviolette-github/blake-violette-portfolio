@@ -14,11 +14,6 @@
             background-color: #0f172a;
             color: #f8fafc;
         }
-
-        .world-map-bg {
-            background-image: radial-gradient(rgba(16, 185, 129, 0.2) 1.2px, transparent 1.2px);
-            background-size: 16px 16px;
-        }
     </style>
 </head>
 <body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-emerald-600 selection:text-white">
@@ -81,83 +76,83 @@
 
     <section id="map-section" class="py-16 md:py-20 border-b border-slate-800 bg-slate-950">
         <div class="max-w-6xl mx-auto px-6">
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8">
-                <div>
-                    <span class="text-xs font-bold uppercase tracking-widest text-emerald-500 block mb-1">Global Career Footprint</span>
-                    <h2 class="text-3xl font-bold text-white">Where I've Built & Operated</h2>
-                </div>
-                <p class="text-slate-400 text-sm max-w-md mt-2 md:mt-0">
-                    A timeline of physical and operational hubs across manufacturing engineering, enterprise S&OP, and cloud data architecture.
-                </p>
+            <div class="mb-8">
+                <span class="text-xs font-bold uppercase tracking-widest text-emerald-500 block mb-1">Career Locations</span>
+                <h2 class="text-3xl font-bold text-white">Where I've Worked</h2>
             </div>
 
-            <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl relative p-6 world-map-bg min-h-[400px] flex flex-col justify-between">
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl relative overflow-hidden">
                 
-                <div class="flex justify-between items-center text-xs font-mono text-slate-400 z-10 bg-slate-950/80 p-3 rounded-lg border border-slate-800 backdrop-blur">
-                    <span class="flex items-center gap-2">
-                        <span class="h-2.5 w-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                        4 KEY CAREER LOCATIONS
-                    </span>
-                    <span>NORTH AMERICA & EUROPE</span>
-                </div>
-
-                <div class="relative w-full h-[320px] my-4">
-                    <svg class="w-full h-full" viewBox="0 0 1000 450" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        
-                        <path d="M 220 230 L 250 250 L 260 210 L 610 160" stroke="#059669" stroke-width="2" stroke-dasharray="6 6" stroke-opacity="0.6" />
-
-                        <g class="cursor-pointer group">
-                            <circle cx="220" cy="230" r="14" fill="#0284c7" fill-opacity="0.2"/>
-                            <circle cx="220" cy="230" r="6" fill="#38bdf8"/>
-                            <rect x="130" y="165" width="160" height="50" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
-                            <text x="210" y="185" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="700" font-family="Inter">General Electric</text>
-                            <text x="210" y="202" text-anchor="middle" fill="#38bdf8" font-size="10" font-family="Inter">USA (Multiple Sites) • 2008–2014</text>
-                        </g>
-
-                        <g class="cursor-pointer group">
-                            <circle cx="250" cy="250" r="14" fill="#059669" fill-opacity="0.2"/>
-                            <circle cx="250" cy="250" r="6" fill="#10b981"/>
-                            <rect x="180" y="275" width="140" height="50" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
-                            <text x="250" y="295" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="700" font-family="Inter">SweetWater Brewing</text>
-                            <text x="250" y="312" text-anchor="middle" fill="#34d399" font-size="10" font-family="Inter">Atlanta, GA • 2014–2015</text>
-                        </g>
-
-                        <g class="cursor-pointer group">
-                            <circle cx="260" cy="210" r="14" fill="#059669" fill-opacity="0.2"/>
-                            <circle cx="260" cy="210" r="6" fill="#10b981"/>
-                            <rect x="280" y="175" width="140" height="50" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
-                            <text x="350" y="195" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="700" font-family="Inter">Bell's Brewery</text>
-                            <text x="350" y="212" text-anchor="middle" fill="#34d399" font-size="10" font-family="Inter">Michigan, USA • 2017–2021</text>
-                        </g>
-
-                        <g class="cursor-pointer group">
-                            <circle cx="610" cy="160" r="22" fill="#059669" fill-opacity="0.3" class="animate-ping"/>
-                            <circle cx="610" cy="160" r="12" fill="#059669" fill-opacity="0.4"/>
-                            <circle cx="610" cy="160" r="7" fill="#34d399" stroke="#ffffff" stroke-width="2"/>
-                            <rect x="530" y="80" width="160" height="55" rx="6" fill="#0f172a" stroke="#059669" stroke-width="1.5"/>
-                            <text x="610" y="102" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="800" font-family="Inter">Amazon EU HQ</text>
-                            <text x="610" y="120" text-anchor="middle" fill="#34d399" font-size="10" font-weight="600" font-family="Inter">Luxembourg • 2021–Present</text>
-                        </g>
-
+                <div class="relative w-full h-[280px] sm:h-[340px] rounded-xl bg-slate-950 border border-slate-800 flex items-center justify-center overflow-hidden mb-6">
+                    
+                    <svg class="absolute inset-0 w-full h-full opacity-20 text-slate-500" viewBox="0 0 1000 500" fill="currentColor">
+                        <path d="M150,120 Q220,80 320,110 Q380,180 320,300 Q220,340 180,260 Q120,200 150,120 Z"/>
+                        <path d="M520,100 Q620,80 660,150 Q640,220 560,210 Q500,160 520,100 Z"/>
                     </svg>
+
+                    <div class="absolute inset-0 w-full h-full">
+                        
+                        <div class="absolute top-[48%] left-[24%] sm:left-[26%] flex items-center gap-2 group">
+                            <span class="relative flex h-3 w-3">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+                            </span>
+                            <div class="bg-slate-900/90 border border-slate-700 px-2.5 py-1 rounded-md text-[11px] font-medium text-slate-200 shadow-md">
+                                <span class="font-bold text-white block sm:inline">GE:</span> USA (Multiple Sites)
+                            </div>
+                        </div>
+
+                        <div class="absolute top-[62%] left-[22%] sm:left-[24%] flex items-center gap-2">
+                            <span class="relative flex h-3 w-3">
+                                <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+                            </span>
+                            <div class="bg-slate-900/90 border border-slate-700 px-2.5 py-1 rounded-md text-[11px] font-medium text-slate-200 shadow-md">
+                                <span class="font-bold text-white block sm:inline">SweetWater:</span> Atlanta, GA
+                            </div>
+                        </div>
+
+                        <div class="absolute top-[38%] left-[21%] sm:left-[23%] flex items-center gap-2">
+                            <span class="relative flex h-3 w-3">
+                                <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+                            </span>
+                            <div class="bg-slate-900/90 border border-slate-700 px-2.5 py-1 rounded-md text-[11px] font-medium text-slate-200 shadow-md">
+                                <span class="font-bold text-white block sm:inline">Bell's Brewery:</span> Michigan, USA
+                            </div>
+                        </div>
+
+                        <div class="absolute top-[35%] left-[54%] sm:left-[56%] flex items-center gap-2">
+                            <span class="relative flex h-3.5 w-3.5">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-emerald-500"></span>
+                            </span>
+                            <div class="bg-slate-900/95 border border-emerald-500/80 px-2.5 py-1 rounded-md text-[11px] font-semibold text-emerald-400 shadow-lg">
+                                <span class="font-bold text-white block sm:inline">Amazon EU:</span> Luxembourg
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
 
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 z-10 pt-4 border-t border-slate-800">
-                    <div class="bg-slate-950/60 p-3 rounded-lg border border-slate-800">
-                        <span class="text-[10px] uppercase font-bold text-slate-500 block">General Electric</span>
-                        <span class="text-xs font-semibold text-slate-300">USA Rotational & Audit</span>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="bg-slate-950/80 p-4 rounded-xl border border-slate-800">
+                        <span class="text-xs uppercase font-bold text-sky-400 block mb-1">General Electric</span>
+                        <div class="text-sm font-semibold text-white">USA Rotational & Audit</div>
+                        <span class="text-xs text-slate-500 mt-1 block">2008 – 2014</span>
                     </div>
-                    <div class="bg-slate-950/60 p-3 rounded-lg border border-slate-800">
-                        <span class="text-[10px] uppercase font-bold text-slate-500 block">SweetWater Brewing</span>
-                        <span class="text-xs font-semibold text-slate-300">Atlanta, Georgia</span>
+                    <div class="bg-slate-950/80 p-4 rounded-xl border border-slate-800">
+                        <span class="text-xs uppercase font-bold text-emerald-400 block mb-1">SweetWater Brewing</span>
+                        <div class="text-sm font-semibold text-white">Atlanta, Georgia, USA</div>
+                        <span class="text-xs text-slate-500 mt-1 block">2014 – 2015</span>
                     </div>
-                    <div class="bg-slate-950/60 p-3 rounded-lg border border-slate-800">
-                        <span class="text-[10px] uppercase font-bold text-slate-500 block">Bell's Brewery</span>
-                        <span class="text-xs font-semibold text-slate-300">Michigan, USA</span>
+                    <div class="bg-slate-950/80 p-4 rounded-xl border border-slate-800">
+                        <span class="text-xs uppercase font-bold text-emerald-400 block mb-1">Bell's Brewery</span>
+                        <div class="text-sm font-semibold text-white">Michigan, USA</div>
+                        <span class="text-xs text-slate-500 mt-1 block">2017 – 2021</span>
                     </div>
-                    <div class="bg-slate-950/60 p-3 rounded-lg border border-slate-800">
-                        <span class="text-[10px] uppercase font-bold text-emerald-500 block">Amazon EU</span>
-                        <span class="text-xs font-semibold text-emerald-400">Luxembourg City</span>
+                    <div class="bg-slate-950/80 p-4 rounded-xl border border-emerald-500/40">
+                        <span class="text-xs uppercase font-bold text-emerald-400 block mb-1">Amazon EU</span>
+                        <div class="text-sm font-semibold text-white">Luxembourg City, Luxembourg</div>
+                        <span class="text-xs text-emerald-500/80 font-medium mt-1 block">2021 – Present</span>
                     </div>
                 </div>
 
