@@ -15,22 +15,9 @@
             color: #f8fafc;
         }
 
-        /* Abstract Dot-Matrix World Grid Background */
-        .global-grid-bg {
-            background-image: radial-gradient(rgba(16, 185, 129, 0.15) 1px, transparent 1px);
-            background-size: 18px 18px;
-        }
-
-        /* SVG Arc Animation */
-        .flight-path {
-            stroke-dasharray: 8;
-            animation: dash 30s linear infinite;
-        }
-
-        @keyframes dash {
-            to {
-                stroke-dashoffset: -1000;
-            }
+        .world-map-bg {
+            background-image: radial-gradient(rgba(16, 185, 129, 0.2) 1.2px, transparent 1.2px);
+            background-size: 16px 16px;
         }
     </style>
 </head>
@@ -41,7 +28,7 @@
             <a href="#hero" class="text-xl font-bold tracking-tight text-white hover:text-emerald-500 transition">Blake Violette</a>
             <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
                 <a href="#about" class="hover:text-emerald-500 transition">About</a>
-                <a href="#global-reach" class="hover:text-emerald-500 transition">Global Footprint</a>
+                <a href="#map-section" class="hover:text-emerald-500 transition">Career Map</a>
                 <a href="#expertise" class="hover:text-emerald-500 transition">Core Capabilities</a>
                 <a href="#experience" class="hover:text-emerald-500 transition">Track Record</a>
                 <a href="#projects" class="hover:text-emerald-500 transition">Systems & Projects</a>
@@ -60,10 +47,10 @@
                     Blake Violette
                 </h1>
                 <p class="text-2xl font-semibold text-emerald-500 mb-6">
-                    Building resilient data systems, untangling complex supply networks, and brewing craft beer.
+                    Building resilient cloud data systems and optimizing global supply chain networks.
                 </p>
                 <p class="text-slate-400 text-base leading-relaxed mb-8">
-                    Senior Technical Product Manager (PM-T) with 15 years of hands-on experience spanning cloud data architecture (AWS), global supply chain telemetry, enterprise S&OP, and risk governance across Amazon, Bell's Brewery, and General Electric.
+                    Senior Technical Product Manager (PM-T) with 15 years of hands-on experience spanning cloud data architecture (AWS), global supply chain telemetry, enterprise S&OP, and risk governance across Amazon, Bell's Brewery, SweetWater, and General Electric.
                 </p>
                 <div class="flex flex-wrap gap-4">
                     <a href="https://github.com/blakeviolette-github/blake-violette-portfolio/issues/new" target="_blank" rel="noopener noreferrer" class="px-6 py-3 bg-emerald-700 hover:bg-emerald-800 text-white font-semibold rounded-lg shadow-lg transition">
@@ -92,104 +79,85 @@
         </div>
     </section>
 
-    <section id="global-reach" class="py-16 md:py-20 border-b border-slate-800 bg-slate-950">
+    <section id="map-section" class="py-16 md:py-20 border-b border-slate-800 bg-slate-950">
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-8">
                 <div>
-                    <span class="text-xs font-bold uppercase tracking-widest text-emerald-500 block mb-1">Global Scope & Infrastructure</span>
-                    <h2 class="text-3xl font-bold text-white">Cross-Border Experience Matrix</h2>
+                    <span class="text-xs font-bold uppercase tracking-widest text-emerald-500 block mb-1">Global Career Footprint</span>
+                    <h2 class="text-3xl font-bold text-white">Where I've Built & Operated</h2>
                 </div>
                 <p class="text-slate-400 text-sm max-w-md mt-2 md:mt-0">
-                    A decade and a half of driving multi-regional operations, enterprise data governance, and international supply chain resilience.
+                    A timeline of physical and operational hubs across manufacturing engineering, enterprise S&OP, and cloud data architecture.
                 </p>
             </div>
 
-            <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl grid grid-cols-1 lg:grid-cols-3">
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl relative p-6 world-map-bg min-h-[400px] flex flex-col justify-between">
                 
-                <div class="lg:col-span-2 relative min-h-[320px] md:min-h-[380px] bg-slate-900 global-grid-bg p-6 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-slate-800">
-                    
-                    <div class="flex justify-between items-center text-xs font-mono text-slate-500 z-10">
-                        <span class="flex items-center gap-2">
-                            <span class="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                            ACTIVE OPERATIONAL HUBS
-                        </span>
-                        <span>LAT: 49.6275° N | LON: 6.1360° E</span>
-                    </div>
-
-                    <div class="absolute inset-0 w-full h-full pointer-events-none p-4">
-                        <svg class="w-full h-full" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="arc-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                                    <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.4"/>
-                                    <stop offset="50%" stop-color="#10b981" stop-opacity="0.8"/>
-                                    <stop offset="100%" stop-color="#34d399" stop-opacity="0.4"/>
-                                </linearGradient>
-                            </defs>
-
-                            <path class="flight-path" d="M 220 220 Q 420 80 580 160" stroke="url(#arc-gradient)" stroke-width="2.5" fill="none"/>
-                            
-                            <path class="flight-path" d="M 160 260 Q 360 120 580 160" stroke="url(#arc-gradient)" stroke-width="1.5" stroke-dasharray="4" fill="none"/>
-
-                            <g class="pointer-events-auto cursor-pointer">
-                                <circle cx="220" cy="220" r="16" fill="#0369a1" fill-opacity="0.2"/>
-                                <circle cx="220" cy="220" r="6" fill="#38bdf8"/>
-                                <text x="220" y="250" text-anchor="middle" fill="#94a3b8" font-size="11" font-weight="600" font-family="Inter">USA Footprint</text>
-                                <text x="220" y="264" text-anchor="middle" fill="#64748b" font-size="9" font-family="Inter">GE • Bell's • Penn State</text>
-                            </g>
-
-                            <g class="pointer-events-auto cursor-pointer">
-                                <circle cx="160" cy="260" r="12" fill="#0284c7" fill-opacity="0.2"/>
-                                <circle cx="160" cy="260" r="4" fill="#0ea5e9"/>
-                                <text x="160" y="288" text-anchor="middle" fill="#94a3b8" font-size="10" font-family="Inter">Multi-Region Audit</text>
-                            </g>
-
-                            <g class="pointer-events-auto cursor-pointer">
-                                <circle cx="580" cy="160" r="28" fill="#059669" fill-opacity="0.15" class="animate-ping"/>
-                                <circle cx="580" cy="160" r="18" fill="#059669" fill-opacity="0.3"/>
-                                <circle cx="580" cy="160" r="8" fill="#10b981" stroke="#ffffff" stroke-width="2"/>
-                                <text x="580" y="125" text-anchor="middle" fill="#34d399" font-size="12" font-weight="700" font-family="Inter">Luxembourg HQ</text>
-                                <text x="580" y="140" text-anchor="middle" fill="#94a3b8" font-size="10" font-family="Inter">Amazon EU & Regional Hubs</text>
-                            </g>
-                        </svg>
-                    </div>
-
-                    <div class="mt-auto pt-6 flex flex-wrap gap-6 text-xs text-slate-400 z-10 border-t border-slate-800/80">
-                        <div class="flex items-center gap-2">
-                            <span class="w-3 h-0.5 bg-emerald-400"></span>
-                            <span>Cross-Border S&OP & Cloud Pipelines</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-                            <span>Primary Operational Base</span>
-                        </div>
-                    </div>
+                <div class="flex justify-between items-center text-xs font-mono text-slate-400 z-10 bg-slate-950/80 p-3 rounded-lg border border-slate-800 backdrop-blur">
+                    <span class="flex items-center gap-2">
+                        <span class="h-2.5 w-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                        4 KEY CAREER LOCATIONS
+                    </span>
+                    <span>NORTH AMERICA & EUROPE</span>
                 </div>
 
-                <div class="bg-slate-900/80 p-6 flex flex-col justify-between space-y-6">
-                    <h3 class="text-sm font-bold uppercase tracking-wider text-slate-400 border-b border-slate-800 pb-3">Operational Scale</h3>
-                    
-                    <div class="space-y-5">
-                        <div>
-                            <span class="text-3xl font-extrabold text-white">156 PB+</span>
-                            <p class="text-xs text-emerald-500 font-semibold mt-0.5">Annual Supply Chain Ecosystem</p>
-                            <p class="text-xs text-slate-400 mt-1">Product managing multi-market telematics and data pipelines across European hubs at Amazon.</p>
-                        </div>
+                <div class="relative w-full h-[320px] my-4">
+                    <svg class="w-full h-full" viewBox="0 0 1000 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        
+                        <path d="M 220 230 L 250 250 L 260 210 L 610 160" stroke="#059669" stroke-width="2" stroke-dasharray="6 6" stroke-opacity="0.6" />
 
-                        <div>
-                            <span class="text-3xl font-extrabold text-white">28+ Markets</span>
-                            <p class="text-xs text-emerald-500 font-semibold mt-0.5">Cross-Border Governance</p>
-                            <p class="text-xs text-slate-400 mt-1">Driving Operational Level Agreements (OLAs), risk controls, and supply alignment across international networks.</p>
-                        </div>
+                        <g class="cursor-pointer group">
+                            <circle cx="220" cy="230" r="14" fill="#0284c7" fill-opacity="0.2"/>
+                            <circle cx="220" cy="230" r="6" fill="#38bdf8"/>
+                            <rect x="130" y="165" width="160" height="50" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+                            <text x="210" y="185" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="700" font-family="Inter">General Electric</text>
+                            <text x="210" y="202" text-anchor="middle" fill="#38bdf8" font-size="10" font-family="Inter">USA (Multiple Sites) • 2008–2014</text>
+                        </g>
 
-                        <div>
-                            <span class="text-3xl font-extrabold text-white">$20M+</span>
-                            <p class="text-xs text-emerald-500 font-semibold mt-0.5">Risk Exposure Safeguarded</p>
-                            <p class="text-xs text-slate-400 mt-1">Corporate audit, Lean Six Sigma DMAIC, and internal financial controls background at GE.</p>
-                        </div>
+                        <g class="cursor-pointer group">
+                            <circle cx="250" cy="250" r="14" fill="#059669" fill-opacity="0.2"/>
+                            <circle cx="250" cy="250" r="6" fill="#10b981"/>
+                            <rect x="180" y="275" width="140" height="50" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+                            <text x="250" y="295" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="700" font-family="Inter">SweetWater Brewing</text>
+                            <text x="250" y="312" text-anchor="middle" fill="#34d399" font-size="10" font-family="Inter">Atlanta, GA • 2014–2015</text>
+                        </g>
+
+                        <g class="cursor-pointer group">
+                            <circle cx="260" cy="210" r="14" fill="#059669" fill-opacity="0.2"/>
+                            <circle cx="260" cy="210" r="6" fill="#10b981"/>
+                            <rect x="280" y="175" width="140" height="50" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+                            <text x="350" y="195" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="700" font-family="Inter">Bell's Brewery</text>
+                            <text x="350" y="212" text-anchor="middle" fill="#34d399" font-size="10" font-family="Inter">Michigan, USA • 2017–2021</text>
+                        </g>
+
+                        <g class="cursor-pointer group">
+                            <circle cx="610" cy="160" r="22" fill="#059669" fill-opacity="0.3" class="animate-ping"/>
+                            <circle cx="610" cy="160" r="12" fill="#059669" fill-opacity="0.4"/>
+                            <circle cx="610" cy="160" r="7" fill="#34d399" stroke="#ffffff" stroke-width="2"/>
+                            <rect x="530" y="80" width="160" height="55" rx="6" fill="#0f172a" stroke="#059669" stroke-width="1.5"/>
+                            <text x="610" y="102" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="800" font-family="Inter">Amazon EU HQ</text>
+                            <text x="610" y="120" text-anchor="middle" fill="#34d399" font-size="10" font-weight="600" font-family="Inter">Luxembourg • 2021–Present</text>
+                        </g>
+
+                    </svg>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 z-10 pt-4 border-t border-slate-800">
+                    <div class="bg-slate-950/60 p-3 rounded-lg border border-slate-800">
+                        <span class="text-[10px] uppercase font-bold text-slate-500 block">General Electric</span>
+                        <span class="text-xs font-semibold text-slate-300">USA Rotational & Audit</span>
                     </div>
-
-                    <div class="pt-4 border-t border-slate-800 text-xs text-slate-500">
-                        Built for high-stakes operational readiness, cloud interoperability, and system resilience.
+                    <div class="bg-slate-950/60 p-3 rounded-lg border border-slate-800">
+                        <span class="text-[10px] uppercase font-bold text-slate-500 block">SweetWater Brewing</span>
+                        <span class="text-xs font-semibold text-slate-300">Atlanta, Georgia</span>
+                    </div>
+                    <div class="bg-slate-950/60 p-3 rounded-lg border border-slate-800">
+                        <span class="text-[10px] uppercase font-bold text-slate-500 block">Bell's Brewery</span>
+                        <span class="text-xs font-semibold text-slate-300">Michigan, USA</span>
+                    </div>
+                    <div class="bg-slate-950/60 p-3 rounded-lg border border-slate-800">
+                        <span class="text-[10px] uppercase font-bold text-emerald-500 block">Amazon EU</span>
+                        <span class="text-xs font-semibold text-emerald-400">Luxembourg City</span>
                     </div>
                 </div>
 
@@ -202,10 +170,10 @@
             <h2 class="text-3xl font-bold text-white mb-6">Behind the Code & Systems</h2>
             <div class="bg-slate-800/40 border border-slate-800 rounded-xl p-6 md:p-8 leading-relaxed text-slate-300 space-y-4">
                 <p>
-                    I’ve spent the last 15 years turning complex operational chaos into resilient, automated systems that hold up under pressure. My background isn't a single rigid track—I started in manufacturing process engineering and corporate auditing at GE, architected foundational demand forecasting and S&OP processes at Bell’s Brewery, and cleared Amazon’s technical assessment bar to lead engineering teams and petabyte-scale data systems as a PM-T in Luxembourg.
+                    I’ve spent the last 15 years turning complex operational chaos into resilient, automated systems that hold up under pressure. My background isn't a single rigid track—I started in manufacturing process engineering and corporate auditing at GE, managed facility layout engineering at SweetWater Brewing, architected foundational demand forecasting and S&OP processes at Bell’s Brewery, and cleared Amazon’s technical assessment bar to lead engineering teams and petabyte-scale data systems as a PM-T in Luxembourg.
                 </p>
                 <p>
-                    Whether I'm product managing multi-market cloud data pipelines, building binding Operational Level Agreements (OLAs) across international stakeholders, or connecting with local craft brewers, I care about the same core principle: taking complex inputs, removing operational friction, and building dependable systems that people can rely on.
+                    Whether I'm product managing multi-market cloud data pipelines or building binding Operational Level Agreements (OLAs) across international stakeholders, I care about the same core principle: taking complex inputs, removing operational friction, and building dependable systems that people can rely on.
                 </p>
             </div>
         </div>
@@ -272,15 +240,6 @@
                             <li>Built and led a team of PMs operating SQL pipelines, Python automations, and Tableau dashboards for network capacity management across European fulfillment hubs.</li>
                             <li>Identified a trend of top talent leaving for technical tracks and built a structured upskilling and conversion program—transitioning non-tech PMs into formal DE/BIE roles, eliminating attrition, and keeping critical domain knowledge in-house.</li>
                             <li>Accelerated program execution velocity by 25% and reduced MTTR by 40% by standardizing multi-stakeholder governance backlogs and root cause protocols (5 Whys).</li>
-                            <li>Expanded team-wide technical automation output, driving sustained operational cost savings and raising data product standards across European operations.</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <p class="text-lg font-medium text-slate-200 mb-2">Program Manager (Non-Tech)</p>
-                        <ul class="space-y-2 text-slate-400 text-sm leading-relaxed list-disc list-inside">
-                            <li>Managed cross-border logistics initiatives, operational SLAs, and multi-market governance frameworks across EU business units.</li>
-                            <li>Achieved a 99.5% deployment success rate across global initiatives by driving cross-functional consensus across Procurement, Legal, Finance, and Operations partners.</li>
                         </ul>
                     </div>
                 </div>
@@ -296,4 +255,204 @@
                         <p class="text-lg font-medium text-slate-200 mb-2">S&OP & Forecasting Team Lead</p>
                         <ul class="space-y-2 text-slate-400 text-sm leading-relaxed list-disc list-inside">
                             <li>Promoted to lead a team of analysts responsible for demand forecasting, production alignment, and S&OP execution across the enterprise network.</li>
-                            <li>Elevated
+                            <li>Elevated internal and supplier SLA compliance to 98% by creating binding Operational Level Agreements (OLAs) between commercial sales and logistics operations.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <p class="text-lg font-medium text-slate-200 mb-2">Lead Analyst — S&OP Architecture</p>
+                        <ul class="space-y-2 text-slate-400 text-sm leading-relaxed list-disc list-inside">
+                            <li>Architected and created the brewery’s foundational S&OP framework from scratch, linking sales projections directly with production capacity and raw material procurement.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 border-l-2 border-slate-700">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-700"></div>
+                    <div class="flex flex-wrap justify-between items-baseline mb-2">
+                        <h3 class="text-2xl font-bold text-white">SweetWater Brewing Company</h3>
+                        <span class="text-sm font-semibold text-slate-400">Atlanta, GA, USA | 2014 – 2015</span>
+                    </div>
+
+                    <div>
+                        <p class="text-lg font-medium text-slate-200 mb-2">Facility Layout & Logistics Engineer</p>
+                        <ul class="space-y-2 text-slate-400 text-sm leading-relaxed list-disc list-inside">
+                            <li>Engineered facility expansion layouts, optimized physical inventory routing, and streamlined production logistics flow within high-throughput packaging operations.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 border-l-2 border-slate-700">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-700"></div>
+                    <div class="flex flex-wrap justify-between items-baseline mb-2">
+                        <h3 class="text-2xl font-bold text-white">General Electric (GE)</h3>
+                        <span class="text-sm font-semibold text-slate-400">USA | 2008 – 2014</span>
+                    </div>
+
+                    <div class="mb-6">
+                        <p class="text-lg font-medium text-slate-200 mb-2">Manufacturing Process Engineer</p>
+                        <ul class="space-y-2 text-slate-400 text-sm leading-relaxed list-disc list-inside">
+                            <li>Engineered AutoCAD physical FIFO flow-racking modifications in a 3,000 m² component hub, increasing inventory tracking accuracy from 85% to 99.9%.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <p class="text-lg font-medium text-slate-200 mb-2">Corporate Audit Staff Associate</p>
+                        <ul class="space-y-2 text-slate-400 text-sm leading-relaxed list-disc list-inside">
+                            <li>Executed rigorous financial, regulatory, and operational audits across global business units, safeguarding over $20M in systemic risk exposure.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-16 md:py-20 border-b border-slate-800 bg-slate-950">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-10">Systems & Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <div class="p-6 md:p-8 bg-slate-900 border border-slate-800 rounded-xl space-y-4">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs uppercase font-bold tracking-wider text-emerald-500">Live Web Application</span>
+                        <span class="text-xs text-slate-500">Streamlit • Python • GitHub</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">BloopyBloop Web App</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Custom interactive web application developed in Python and deployed via Streamlit and GitHub. Built to dynamically generate personalized bedtime stories and interactive content.
+                    </p>
+                    <div class="pt-2">
+                        <a href="https://github.com/blakeviolette-github" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-emerald-500 hover:text-emerald-400 transition">View GitHub Repositories &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="p-6 md:p-8 bg-slate-900 border border-slate-800 rounded-xl space-y-4">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs uppercase font-bold tracking-wider text-emerald-500">Data Engineering Pipeline</span>
+                        <span class="text-xs text-slate-500">AWS • SQL • Python</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">Supply Chain Telematics Pipeline</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Automated ETL data pipeline built using AWS Glue, Redshift, and S3 to process high-volume linehaul routing streams, driving real-time executive dashboarding in QuickSight and Tableau.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 border-b border-slate-800 bg-slate-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-2xl font-bold text-white mb-6">Outside the Stack</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="p-6 bg-slate-800/40 border border-slate-800 rounded-xl space-y-2">
+                    <h3 class="text-lg font-bold text-emerald-500">Craft Brewing & Community</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Passionate small-batch homebrewer actively working to help build a local homebrewing community in the Beggen and broader Luxembourg region. Always open to sharing recipes, fermentation techniques, and brewing knowledge.
+                    </p>
+                </div>
+                <div class="p-6 bg-slate-800/40 border border-slate-800 rounded-xl space-y-2">
+                    <h3 class="text-lg font-bold text-emerald-500">Life in Luxembourg</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Based in Weimerskirch with my wife, kids, and dog Barley. Actively studying Luxembourgish (Sproochentest prep) and tackling ongoing home improvement initiatives.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tech" class="py-16 md:py-20 border-b border-slate-800 bg-slate-950">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-10">Stack & Tools</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl">
+                    <h3 class="text-lg font-bold text-white mb-3">AWS Infrastructure</h3>
+                    <ul class="space-y-2 text-slate-300 text-sm">
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>S3 & Redshift</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>Glue ETL Pipelines</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>Fargate & Serverless</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>QuickSight & CloudWatch</li>
+                    </ul>
+                </div>
+
+                <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl">
+                    <h3 class="text-lg font-bold text-white mb-3">Data & Code</h3>
+                    <ul class="space-y-2 text-slate-300 text-sm">
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>Python & Streamlit</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>Advanced SQL & R</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>Tableau & Power BI</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>Git & GitHub</li>
+                    </ul>
+                </div>
+
+                <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl">
+                    <h3 class="text-lg font-bold text-white mb-3">Enterprise Systems</h3>
+                    <ul class="space-y-2 text-slate-300 text-sm">
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>SAP ERP & Specifications</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>Microsoft Dynamics</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>Jira, Confluence & Asana</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>Azure DevOps & SDLC</li>
+                    </ul>
+                </div>
+
+                <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl">
+                    <h3 class="text-lg font-bold text-white mb-3">Methods & Governance</h3>
+                    <ul class="space-y-2 text-slate-300 text-sm">
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>Engineering Management (12+)</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>GE Corporate Audit & Risk</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>Lean Six Sigma Green Belt</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>5 Whys Root Cause Analysis</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-16 md:py-20 border-b border-slate-800 bg-slate-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-10">Education & Credentials</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <div class="p-6 md:p-8 bg-slate-900 border border-slate-800 rounded-xl">
+                    <div class="text-xs uppercase font-bold tracking-wider text-emerald-500 mb-2">Graduate</div>
+                    <h3 class="text-xl font-bold text-white">Master of Professional Studies (M.P.S.)</h3>
+                    <p class="text-slate-300 font-medium text-sm mb-4">Supply Chain Management</p>
+                    <p class="text-slate-400 text-sm"><strong>The Pennsylvania State University</strong>, PA, USA</p>
+                </div>
+
+                <div class="p-6 md:p-8 bg-slate-900 border border-slate-800 rounded-xl">
+                    <div class="text-xs uppercase font-bold tracking-wider text-emerald-500 mb-2">Undergraduate</div>
+                    <h3 class="text-xl font-bold text-white">Bachelor of Science (B.S.)</h3>
+                    <p class="text-slate-300 font-medium text-sm mb-4">Statistics and Logistics</p>
+                    <p class="text-slate-400 text-sm"><strong>University of Tennessee</strong>, Knoxville, TN, USA</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-16 bg-slate-950 text-slate-400">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-2xl font-bold text-white mb-4">Let's Connect & Swap Notes</h2>
+            <p class="max-w-xl mx-auto text-sm text-slate-400 mb-8">
+                Based in Weimerskirch, Luxembourg City. Always down to discuss technical product management, supply network analytics, or cloud data infrastructure.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-12">
+                <a href="https://github.com/blakeviolette-github/blake-violette-portfolio/issues/new" target="_blank" rel="noopener noreferrer" class="px-6 py-3 bg-emerald-700 hover:bg-emerald-800 text-white font-semibold rounded-lg transition">
+                    Send Message on GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/blakeviolette" target="_blank" rel="noopener noreferrer" class="px-6 py-3 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold rounded-lg border border-slate-700 transition">
+                    Connect on LinkedIn
+                </a>
+            </div>
+            <p class="text-xs text-slate-600">
+                &copy; Blake Violette. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
